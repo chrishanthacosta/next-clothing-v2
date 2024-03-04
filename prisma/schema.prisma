@@ -1,0 +1,127 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model users{
+  userid       Int      @id @default(autoincrement())
+  staffid Int 
+  username String   
+  password String
+  role String @default("user")
+  createdAt DateTime @default(now())
+}
+
+model staff{
+  staffid       Int      @id @default(autoincrement())
+  staffname String   
+  contracttype String   
+  contactno    String   
+  nic String
+  designation String @default("user")
+  createdAt DateTime @default(now())
+}
+
+model fabrics{
+  fabricid       Int      @id @default(autoincrement())
+  fabricname String   
+}
+
+model suppliers{
+  supplierid       Int      @id @default(autoincrement())
+  suppliercode String   
+  suppliername String   
+  email String   
+  phone String   
+  address String   
+}
+
+model customers{
+  customerid       Int      @id @default(autoincrement())
+  customercode String   
+  customername String   
+  email String   
+  phone String   
+  address String   
+}
+
+model bankdetails{
+  bankaccountid       Int      @id @default(autoincrement())
+  bankname String   
+  accountname String   
+  branchname String   
+  ibanno String   
+  bankbic String   
+  branchbic String   
+  accountno String   
+  sort String   
+}
+
+model purchaseorders{
+  purchaseorderid       Int      @id @default(autoincrement())
+  customerid Int   
+  date String   
+  supplierid Int   
+  customerpo String   
+  exfactorydate String   
+  shippingmode String   
+  customerstylename String   
+  department String   
+  shippingmethod String   
+  fabricid Int   
+  rationpacksize String   
+  style String   
+  colour String   
+  description String   
+  supplierprice Float   
+  sellingprice Float   
+  colourcode String   
+  remark String   
+  currency String   
+  orderstatus String   
+  samplestatus String   
+  totalqty Int  @default(0) 
+  totalvalue Float @default(0.00)   
+  dcdate String @default("2023-02-12")   
+}
+
+model purchaseorderdetails{
+  purchaseorderdetailid       Int      @id @default(autoincrement())
+  purchaseorderid Int   
+  rowindex Int   
+  size String   
+  ratiopack Int   
+  single Int   
+}
+
+model invoice{
+  invoiceid       Int      @id @default(autoincrement())
+  invoiceno String   
+  date String   
+  paymentterm String
+  customerid Int   
+  bankaccountid Int   
+  totalqty Int  @default(0) 
+  totalvalue Float @default(0.00)    
+  currency String   
+  remark String   
+}
+
+model invoicedetails{
+  invoicedetailid       Int      @id @default(autoincrement())
+  invoiceid Int   
+  purchaseorderid Int
+  description String   
+  customerpo String   
+  style String   
+  colour String   
+  totalqty Int   
+  sellingprice Float   
+}
