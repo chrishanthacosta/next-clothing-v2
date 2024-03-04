@@ -19,7 +19,7 @@ const PoPrintableComponent = ({
     newWin.document.open();
     newWin.document.write("<html><head><title>Print</title></head><body>");
     newWin.document.write(`
-      <div style=" display:flex; position:absolute;width:475.2px; height:33.6px; top:0px; left:13px;font-size:26px; font-weight:bold;justify-content:center; align-items:center; " > A AND F SOURCING(FASHIONS) LIMITED</div>
+      <div style=" display:flex; position:absolute;width:475.2px; height:33.6px; top:0px; left:13px;font-size:20px; font-weight:bold;justify-content:center; align-items:center; " > A AND F SOURCING(FASHIONS) LIMITED</div>
 <div style=" display:flex; position:absolute;width:475.2px; height:14.4px; top:33.6px; left:13px;font-size:14px; font-weight:normal;justify-content:center; align-items:flex-end; " > Unit 02, Maple Grove Business Centre, Lawrence Road, Hounslow TW4 6DR.</div>
 <div style=" display:flex; position:absolute;width:475.2px; height:14.4px; top:48px; left:13px;font-size:14px; font-weight:normal;justify-content:center; align-items:flex-end; " > Tel : 44 020 3948 5008 www.aandfsourcing.com</div>
 <div style=" display:flex; position:absolute;width:475.2px; height:14.4px; top:62.4px; left:13px;font-size:14px; font-weight:normal;justify-content:center; align-items:flex-end; " > VAT Registration Number: 273 8855 56</div>
