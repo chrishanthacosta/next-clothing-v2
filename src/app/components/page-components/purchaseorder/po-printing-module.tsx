@@ -105,10 +105,8 @@ const PoPrintableComponent = ({
                   }</div>
 <div style=" display:flex; position:absolute;width:475.2px; height:14.4px; top:650.6px; left:13px;font-size:14px; font-weight:normal;justify-content:center; align-items:flex-end;border-bottom:2px solid black;  " >  </div>
 <div style=" display:flex; position:absolute;width:93px; height:14.4px; top:672.4px; left:13px;font-size:16px; font-weight:bold;justify-content:flex-start; align-items:flex-end; " > Remark:</div>
-<div style=" display:flex; position:absolute;width:475.2px; top:690.4px; left:13px;font-size:14px; font-weight:normal;justify-content:flex-start; align-items:flex-end; " > ${poData.remark
-                  }</div>
-`);
-            //   newWin.document.write(`
+<div id="remark" style=" display:flex; position:absolute;width:475.2px; top:690.4px; left:13px;font-size:14px; font-weight:normal;justify-content:flex-start; align-items:flex-end; " ></div>`);
+            //    ${poData.remark}  newWin.document.write(`
             //   <table style="position: absolute; bottom: 20px; border-collapse: collapse; width: 100%;">
             //   <tr>
             //     <th style="border: 1px solid black; padding: 5px;">Header 1</th>
@@ -136,6 +134,9 @@ const PoPrintableComponent = ({
             const d1 = getPackingListTable(poDataForPrint);
             d.appendChild(d1);
 
+            //add remark
+            const d4 = newWin.document.getElementById("remark");
+            d4.innerHTML = poData.remark;      
             newWin.print();
             newWin.close();
       };
