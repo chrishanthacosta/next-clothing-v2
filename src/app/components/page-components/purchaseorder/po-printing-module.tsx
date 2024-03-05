@@ -105,7 +105,7 @@ const PoPrintableComponent = ({
                   }</div>
 <div style=" display:flex; position:absolute;width:475.2px; height:14.4px; top:650.6px; left:13px;font-size:14px; font-weight:normal;justify-content:center; align-items:flex-end;border-bottom:2px solid black;  " >  </div>
 <div style=" display:flex; position:absolute;width:93px; height:14.4px; top:672.4px; left:13px;font-size:16px; font-weight:bold;justify-content:flex-start; align-items:flex-end; " > Remark:</div>
-<div style=" display:flex; position:absolute;width:93px; top:690.4px; left:13px;font-size:14px; font-weight:normal;justify-content:flex-start; align-items:flex-end; " > ${poData.remark
+<div style=" display:flex; position:absolute;width:475.2px; top:690.4px; left:13px;font-size:14px; font-weight:normal;justify-content:flex-start; align-items:flex-end; " > ${poData.remark
                   }</div>
 `);
             //   newWin.document.write(`
