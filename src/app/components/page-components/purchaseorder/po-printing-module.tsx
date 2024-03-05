@@ -136,7 +136,7 @@ const PoPrintableComponent = ({
 
             //add remark
             const d4 = newWin.document.getElementById("remark");
-            //d4.innerHTML = poData.remark;      
+            d4.innerHTML = poData.remark;      
             newWin.print();
             newWin.close();
       };
