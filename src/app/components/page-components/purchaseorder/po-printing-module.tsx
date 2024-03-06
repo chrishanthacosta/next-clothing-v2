@@ -5,6 +5,22 @@ import React from "react";
 import { BsPrinterFill } from "react-icons/bs";
 import { getPackingListTable, getSizeQtyTable } from "./utils";
 
+const formattArea = (formattedText) => {
+
+      // Replace tab characters with spaces (customize the number of spaces)
+      formattedText = formattedText.replace(/\t/g, '    '); // Replace with four spaces
+
+      // Replace line breaks with <br> for HTML rendering
+      formattedText = formattedText.replace(/\n/g, '<br>');
+
+      // Basic formatting 
+      formattedText = formattedText.replace(/\*\*([^\*]+)\*\*/g, '<strong>$1</strong>');
+      formattedText = formattedText.replace(/\*([^\*]+)\*/g, '<em>$1</em>');
+
+     return formattedText;
+} ;
+
+
 const PoPrintableComponent = ({
       poDataForPrint,
 }: {
@@ -136,7 +152,7 @@ const PoPrintableComponent = ({
 
             //add remark
             const d4 = newWin.document.getElementById("remark");
-            d4.innerHTML = poData.remark;      
+            d4.innerHTML = formattArea( poData.remark);      
             newWin.print();
             newWin.close();
       };
