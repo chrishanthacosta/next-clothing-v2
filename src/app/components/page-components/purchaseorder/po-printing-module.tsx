@@ -8,7 +8,7 @@ import { getPackingListTable, getSizeQtyTable } from "./utils";
 const formattArea = (formattedText) => {
 
       // Replace tab characters with spaces (customize the number of spaces)
-      formattedText = formattedText.replace(/\t/g, '    '); // Replace with four spaces
+      //formattedText = formattedText.replace(/\t/g, '    '); // Replace with four spaces
 
       // Replace line breaks with <br> for HTML rendering
       formattedText = formattedText.replace(/\n/g, '<br>');
@@ -16,6 +16,9 @@ const formattArea = (formattedText) => {
       // Basic formatting 
       formattedText = formattedText.replace(/\*\*([^\*]+)\*\*/g, '<strong>$1</strong>');
       formattedText = formattedText.replace(/\*([^\*]+)\*/g, '<em>$1</em>');
+      formattedText = formattedText.replace(/\s/g, '&nbsp;');
+
+
 
      return formattedText;
 } ;
