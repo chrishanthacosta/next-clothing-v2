@@ -37,6 +37,7 @@ export const PoTable = ({ poRowObjects }: { poRowObjects: any[] }) => {
 
   const tableHeads = [
     "#",
+    "ID",
     "Customer",
     "Supplier",
     "Order status",
@@ -117,6 +118,9 @@ export const PoTable = ({ poRowObjects }: { poRowObjects: any[] }) => {
                 className="bg-purple-gray-300"
               >
                 <TableCell>{index + 1}</TableCell>
+                <TableCell>
+                  {tableRow.purchaseorderid ? tableRow.purchaseorderid : "-"}
+                </TableCell>
                 <TableCell>
                   {tableRow.customername ? tableRow.customername : "-"}
                 </TableCell>
