@@ -17,7 +17,7 @@ export async function GET(request: Request) {
       const rawQuery = Prisma.sql`
                     SELECT i.*, c.customername, c.address,b.*
                     FROM invoice i
-                    JOIN customers c ON i.customerid = c.customerid JOIN bankdetails as b ON i.bankaccountid = b.bankaccountid
+                    left JOIN customers c ON i.customerid = c.customerid left JOIN bankdetails as b ON i.bankaccountid = b.bankaccountid
                     WHERE i.invoiceid = ${parseInt(invoiceid)}
                   `;
       const invoiceData = await tx.$queryRaw(rawQuery);

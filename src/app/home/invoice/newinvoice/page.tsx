@@ -299,11 +299,11 @@ export default function NewInvoice() {
   return (
     <div className="flex ml-3 flex-col bg-slate-200 w-full">
       <span className="text-3xl font-black leading-none text-gray-900 select-none">
-        {formData.invoiceid ? "Edit" : "Create new"} Invoi
+        {formData?.invoiceid ? "Edit" : "Create new"} Invoi
         <span className="text-indigo-600">ce</span>
       </span>
       <div className="justify-end w-full mt-3 flex items-center mr-3 gap-2">
-        {formData.invoiceid ? (
+        {formData?.invoiceid ? (
           <InvoicePrintableComponent
             invoiceHeaderData={invoiceHeaderData}
             invoiceDetailData={invoiceDetailData}
@@ -324,14 +324,14 @@ export default function NewInvoice() {
             <div className="mb-6 md:mb-0 gap-4 w-full px-3 sm:w-1/2">
               <NextTextReadOnlyInputField
                 label="Invoice ID"
-                value={formData.invoiceid}
+                value={formData?.invoiceid}
                 onChange={(e) => handleInputChange(e.target.value, "invoiceid")}
               />
             </div>
             <div className="mb-6 md:mb-0 gap-4 w-full px-3 sm:w-1/2">
               <NextAutoFocusTextInputField
                 label="Invoice No"
-                value={formData.invoiceno}
+                value={formData?.invoiceno}
                 onChange={(e) => handleInputChange(e.target.value, "invoiceno")}
               />
             </div>
@@ -340,14 +340,14 @@ export default function NewInvoice() {
             <div className="mb-6 md:mb-0 gap-4 w-full px-3 sm:w-1/2">
               <NextDateInputField
                 label="Date"
-                value={formData.date}
+                value={formData?.date}
                 onChange={(e) => handleInputChange(e.target.value, "date")}
               />
             </div>
             <div className="mb-6 md:mb-0 gap-4 w-full px-3 sm:w-1/2">
               <NextTextInputField
                 label="Payment terms"
-                value={formData.paymentterm}
+                value={formData?.paymentterm}
                 onChange={(e) =>
                   handleInputChange(e.target.value, "paymentterm")
                 }
@@ -356,7 +356,7 @@ export default function NewInvoice() {
           </div>
           <div className="flex flex-wrap">
             <div className="mb-6 md:mb-0 gap-4 w-full px-3 sm:w-1/2">
-              {formData.invoiceid ? (
+              {formData?.invoiceid ? (
                 <NextReadonlySelectInputField
                   label="Customer"
                   value={customerid}
@@ -402,7 +402,7 @@ export default function NewInvoice() {
             <div className="mb-6 md:mb-0 gap-4 w-full px-3 sm:w-1/2">
               <NextNumberReadOnlyInputField
                 label="Total Qty"
-                value={formData.totalqty}
+                value={formData?.totalqty}
                 onChange={(e) => handleInputChange(e.target.value, "totalqty")}
               />
             </div>
@@ -410,7 +410,7 @@ export default function NewInvoice() {
               <div className="w-3/5">
                 <NextNumberReadOnlyInputField
                   label="Total Value"
-                  value={formData.totalvalue}
+                  value={formData?.totalvalue}
                   onChange={(e) =>
                     handleInputChange(e.target.value, "totalvalue")
                   }
@@ -432,7 +432,7 @@ export default function NewInvoice() {
             <div className="mb-6 md:mb-0 gap-4 w-full px-3 sm:w-1/1">
               <NextAreaTextInputField
                 label="Remark"
-                value={formData.remark}
+                value={formData?.remark}
                 onChange={(e) => handleInputChange(e.target.value, "remark")}
               />
             </div>
@@ -457,11 +457,11 @@ export default function NewInvoice() {
                   Cancel
                 </Button>
               </div>
-              <div className={formData.invoiceid ? "ml-auto" : "hidden"}>
+              <div className={formData?.invoiceid ? "ml-auto" : "hidden"}>
                 <Button
                   color="danger"
                   startContent={<ImBin />}
-                  onClick={() => handleDelete(pathname, formData.invoiceid)}
+                  onClick={() => handleDelete(pathname, formData?.invoiceid)}
                 >
                   Delete
                 </Button>
