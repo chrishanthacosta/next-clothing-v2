@@ -95,8 +95,8 @@ export const InvoiceDetailTableRow = ({
           /> */}
         </div>
       </td>
-      <td className="text-center py-1 px-4">{tableRow.sellingprice}</td>
-      <td className="text-center py-1 px-4">{tableRow.totalvalue}</td>
+      <td className="text-center py-1 px-4">{tableRow.sellingprice.toFixed(2)}</td>
+      <td className="text-center py-1 px-4">{tableRow.totalvalue.toFixed(2)}</td>
       <td className="text-center py-1 px-4">
         <Button
           isIconOnly

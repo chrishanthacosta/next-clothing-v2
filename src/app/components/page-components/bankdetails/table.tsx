@@ -44,7 +44,7 @@ export const BankDetailTable = ({
     "Bank A/C ID",
     "ibanno",
     "Bank Name",
-    "Bank BIC",
+    "SWIFT CODE",
     "Account Name",
     "Branch Name",
     "Branch BIC",

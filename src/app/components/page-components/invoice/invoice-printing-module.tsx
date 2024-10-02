@@ -58,24 +58,21 @@ const InvoicePrintableComponent = ({
       )}</div>
     <div style=" display:flex; position:absolute;width:500px; height:14.4px; top:541.8px;  left:13px;font-size:12px; font-weight:normal;justify-content:left; align-items:flex-end;   " > Bank Details</div>
     <div style=" display:flex; position:absolute;width:490.8px; height:14.4px; top:556.2px;  left:13px;font-size:11px; font-weight:normal;justify-content:center; align-items:flex-end;border-top:2px solid black;  " >  </div>
-    <div style=" display:flex; position:absolute;width:51px; height:14.4px; top:570.6px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-start; " > Bank:</div>
-    <div style=" display:flex; position:absolute;width:200px; height:14.4px; top:585px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-start; " > Account Name/ Beneficiary Name:</div>
-    <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:585px; left:174px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${tmpInvoiceHeaderData.accountname
+    <div style=" display:flex; position:absolute;width:51px; height:14.4px; top:570.6px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-start; " > BANK:</div>
+85  <div style=" display:flex; position:absolute;width:200px; height:14.4px; top:585px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-start; " > ACCOUNT/BENEFICIARY NAME:</div>
+    <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:585px; left:185px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${tmpInvoiceHeaderData.accountname
       }</div>
-    <div style=" display:flex; position:absolute;width:150px; height:14.4px; top:599.4px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > Account Number:</div>
-    <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:599.4px;  left:174px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${tmpInvoiceHeaderData.accountno
+    <div style=" display:flex; position:absolute;width:150px; height:14.4px; top:599.4px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > ACCOUNT NUMBER:</div>
+    <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:599.4px;  left:185px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${tmpInvoiceHeaderData.accountno
       }</div>
-    <div style=" display:flex; position:absolute;width:150px; height:14.4px; top:613.8px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > Sort Code:</div>
-    <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:613.8px;  left:174px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${tmpInvoiceHeaderData.sort
+    <div style=" display:flex; position:absolute;width:150px; height:14.4px; top:613.8px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > SORT CODE:</div>
+    <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:613.8px;  left:185px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${tmpInvoiceHeaderData.sort
       }</div>
     <div style=" display:flex; position:absolute;width:150px; height:14.4px; top:628.2px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > IBAN A/C NO:</div>
-    <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:628.2px;  left:174px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${tmpInvoiceHeaderData.ibanno
+    <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:628.2px;  left:185px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${tmpInvoiceHeaderData.ibanno
       }</div>
-    <div style=" display:flex; position:absolute;width:150px; height:14.4px; top:642.6px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > Bank BIC:</div>
-    <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:642.6px;  left:174px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${tmpInvoiceHeaderData.bankbic
-      }</div>
-    <div style=" display:flex; position:absolute;width:150px; height:14.4px; top:657px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > Branch BIC:</div>
-    <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:657px;  left:174px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${tmpInvoiceHeaderData.branchbic
+    <div style=" display:flex; position:absolute;width:150px; height:14.4px; top:642.6px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > SWIFT CODE:</div>
+    <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:642.6px;  left:185px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${tmpInvoiceHeaderData.bankbic
       }</div>`);
     //   newWin.document.write(`
     //   <table style="position: absolute; bottom: 20px; border-collapse: collapse; width: 100%;">
@@ -164,11 +161,11 @@ const getInvoiceDetailsDiv = (invoicedetails) => {
     odiv.appendChild(cdiv);
 
     totalqty += parseFloat(row.totalqty);
-    totalvalue += parseFloat(valStr);
+    totalvalue += parseFloat( valStr );
   });
 
   // add footer row
-  odiv.appendChild(getTableFooterRow(totalqty, totalvalue));
+  odiv.appendChild(getTableFooterRow(totalqty, totalvalue.toFixed(2)));
 
   const d = gdiv();
   d.appendChild(odiv);

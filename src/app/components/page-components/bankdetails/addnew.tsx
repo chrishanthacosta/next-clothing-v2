@@ -171,10 +171,10 @@ const NewBankDetail = ({
     const validation = inputFieldValidation({
       bankname,
       accountname,
-      branchname,
+      // branchname,
       ibanno,
       bankbic,
-      branchbic,
+      // branchbic,
       accountno,
       sort,
     });
@@ -343,7 +343,7 @@ const NewBankDetail = ({
                   </div>
                   <div className="w-full sm:w-1/2">
                     <NextAutoFocusTextInputField
-                      label="ibanno"
+                      label="IBAN NO"
                       value={ibanno}
                       onChange={(e) => setIbanno(e.target.value)}
                     />
@@ -359,7 +359,7 @@ const NewBankDetail = ({
                   </div>
                   <div className="w-full sm:w-1/2">
                     <NextTextInputField
-                      label="Bank BIC"
+                      label="SWIFT CODE"
                       value={bankbic}
                       onChange={(e) => setBankbic(e.target.value)}
                     />

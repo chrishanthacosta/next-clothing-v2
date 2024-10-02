@@ -182,8 +182,9 @@ export default function NewInvoice() {
         remark: y.remark,
       }));
       setInvoiceHeaderData(resData);
+      
       setInvoiceDetailData(res.invoiceDetailData);
-
+      
       setFormData(tmpInvoiceData[0]);
       // console.log("resData[0].customerid", resData[0].customerid);
       setCustomerid(new Set([resData[0].customerid.toString()]));
@@ -410,7 +411,7 @@ export default function NewInvoice() {
               <div className="w-3/5">
                 <NextNumberReadOnlyInputField
                   label="Total Value"
-                  value={formData?.totalvalue}
+                  value={Number(formData?.totalvalue ?? 0).toFixed(2)}
                   onChange={(e) =>
                     handleInputChange(e.target.value, "totalvalue")
                   }

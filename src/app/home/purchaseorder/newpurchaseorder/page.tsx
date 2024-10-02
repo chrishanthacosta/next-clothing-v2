@@ -310,7 +310,7 @@ export default function PurchaseOrder() {
 
   useEffect(() => {
     const tmpTotalValue = supplierprice * totalqty;
-    setTotalvalue(tmpTotalValue);
+    setTotalvalue(tmpTotalValue.toFixed(2));
   }, [totalqty, supplierprice]);
 
   const cancelEvent = () => {
@@ -717,7 +717,7 @@ export default function PurchaseOrder() {
                 <NextNumberInputField
                   label="Supplier price"
                   value={supplierprice}
-                  onChange={(e) => setSupplierprice(e.target.value)}
+                  onChange={(e) => setSupplierprice( e.target.value) }
                 />
               </div>
               <div className="w-2/5">
@@ -743,7 +743,7 @@ export default function PurchaseOrder() {
                 <NextNumberReadOnlyInputField
                   label="Total value"
                   value={totalvalue}
-                  onChange={(e) => setTotalvalue(e.target.value)}
+                  onChange={(e) => setTotalvalue(Number(e.target.value ?? 0).toFixed(2))}
                 />
               </div>
               <div className="w-2/5">
@@ -765,7 +765,7 @@ export default function PurchaseOrder() {
                 <NextNumberInputField
                   label="Selling price"
                   value={sellingprice}
-                  onChange={(e) => setSellingprice(e.target.value)}
+                  onChange={(e) => setSellingprice( e.target.value )}
                 />
               </div>
               <div className="w-2/5">

@@ -51,6 +51,7 @@ export const InvoiceDetailTable = ({
       rowindex: index,
     }));
     setTableData(updatedTableData);
+    console.log("updatedTableData1",updatedTableData)
   }, [selectedPoDataList]);
 
   useEffect(() => {
@@ -62,6 +63,7 @@ export const InvoiceDetailTable = ({
       rowindex: index,
     }));
     setTableData(updatedTableData);
+    console.log("updatedTableData2",updatedTableData)
     dispatch(setSelectedPoList(q));
   }, [newSelectedPoList]);
 
@@ -121,6 +123,7 @@ export const InvoiceDetailTable = ({
       r.rowindex === newVal.rowindex ? newVal : r
     );
     setTableData(updatedArray);
+    console.log("updatedTableData3",updatedArray)
     dispatch(setSelectedPoList(updatedArray));
     // setTableUpdate((prv: boolean) => !prv);
   };

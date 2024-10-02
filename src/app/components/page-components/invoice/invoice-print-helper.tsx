@@ -54,14 +54,13 @@ export const getInvoicePrintHTMLTemplate = (data) => {
 <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:585px; left:239px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${accountname}</div>
 <div style=" display:flex; position:absolute;width:150px; height:14.4px; top:599.4px; left:80px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > Account Number:</div>
 <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:599.4px; left:239px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${accountno}</div>
-<div style=" display:flex; position:absolute;width:150px; height:14.4px; top:613.8px; left:80px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > Sort Code:</div>
+<div style=" display:flex; position:absolute;width:150px; height:14.4px; top:613.8px; left:80px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > SORT CODE:</div>
 <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:613.8px; left:239px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${sortcode}</div>
 <div style=" display:flex; position:absolute;width:150px; height:14.4px; top:628.2px; left:80px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > IBAN A/C NO:</div>
 <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:628.2px; left:239px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${ibanno}</div>
 <div style=" display:flex; position:absolute;width:150px; height:14.4px; top:642.6px; left:80px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > Bank BIC:</div>
 <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:642.6px; left:239px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${bankbic}</div>
-<div style=" display:flex; position:absolute;width:150px; height:14.4px; top:657px; left:80px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > Branch BIC:</div>
-<div style=" display:flex; position:absolute;width:279px; height:14.4px; top:657px; left:239px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${branchbic}</div>
+ 
 `;
 
   return a;
