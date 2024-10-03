@@ -206,7 +206,7 @@ const getHeaderRowDiv = () => {
   // });20
   addSpanToHDiv("Description", odiv, 40);
   addSpanToHDiv("Po No", odiv, 20);
-  addSpanToHDiv("Style No", odiv, 20);
+  addSpanToHDiv(" Customer Style No", odiv, 20);
   addSpanToHDiv("Colour", odiv, 20);
   addSpanToHDiv("Qty", odiv, 10);
   addSpanToHDiv("Unit Price (USD)", odiv, 20);

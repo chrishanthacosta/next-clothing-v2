@@ -611,7 +611,7 @@ export default function PurchaseOrder() {
             </div>
             <div className="mb-6 md:mb-0 gap-4 w-full px-3 sm:w-1/3">
               <NextTextInputField
-                label="Supplier Style NO"
+                label="Supplier Style No"
                 value={customerstylename}
                 onChange={(e) => setCustomerstylename(e.target.value)}
               />

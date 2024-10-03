@@ -68,10 +68,10 @@ const PoPrintableComponent = ({
                   )}</div>
 
 <div style=" display:flex; position:absolute;width:475.2px; height:14.4px; top:260.6px; left:13px;font-size:14px; font-weight:normal;justify-content:center; align-items:flex-end;border-bottom:2px solid black;  " >  </div>
-<div style=" display:flex; position:absolute;width:69.6px; height:14.4px; top:285.4px; left:13px;font-size:14px; font-weight:normal;justify-content:flex-start; align-items:flex-end; " > Style #:</div>
-<div style=" display:flex; position:absolute;width:182.4px; height:14.4px; top:285.4px; left:82.6px;font-size:14px; font-weight:normal;justify-content:flex-start; align-items:flex-end; " > ${poData.style
+<div style=" display:flex; position:absolute;width:99.6px; height:14.4px; top:285.4px; left:13px;font-size:14px; font-weight:normal;justify-content:flex-start; align-items:flex-end; " >Customer Style#:</div>
+<div style=" display:flex; position:absolute;width:182.4px; height:14.4px; top:285.4px; left:120.6px;font-size:14px; font-weight:normal;justify-content:flex-start; align-items:flex-end; " > ${poData.style
                   }</div>
-<div style=" display:flex; position:absolute;width:100px; height:14.4px; top:285.4px; left:273.6px;font-size:14px; font-weight:normal;justify-content:flex-start; align-items:flex-end; " > Customer Style#:</div>
+<div style=" display:flex; position:absolute;width:100px; height:14.4px; top:285.4px; left:273.6px;font-size:14px; font-weight:normal;justify-content:flex-start; align-items:flex-end; " > Supplier Style#:</div>
 <div style=" display:flex; position:absolute;width:111.6px; height:14.4px; top:285.4px; left:376.6px;font-size:14px; font-weight:normal;justify-content:flex-start; align-items:flex-end; " > ${poData.customerstylename
                   }</div>
 <div style=" display:flex; position:absolute;width:69.6px; height:14.4px; top:307.2px; left:13px;font-size:14px; font-weight:normal;justify-content:flex-start; align-items:flex-end; " > Fabric:</div>
