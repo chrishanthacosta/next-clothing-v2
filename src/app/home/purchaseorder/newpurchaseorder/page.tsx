@@ -611,7 +611,7 @@ export default function PurchaseOrder() {
             </div>
             <div className="mb-6 md:mb-0 gap-4 w-full px-3 sm:w-1/3">
               <NextTextInputField
-                label="Customer style name"
+                label="Style name"
                 value={customerstylename}
                 onChange={(e) => setCustomerstylename(e.target.value)}
               />
@@ -659,7 +659,7 @@ export default function PurchaseOrder() {
           <div className="flex flex-wrap">
             <div className="mb-6 md:mb-0 gap-4 w-full px-3 sm:w-1/3">
               <NextTextInputField
-                label="Style"
+                label="Customer Style"
                 value={style}
                 onChange={(e) => setStyle(e.target.value)}
               />

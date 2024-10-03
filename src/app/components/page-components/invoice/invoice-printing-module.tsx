@@ -59,7 +59,7 @@ const InvoicePrintableComponent = ({
     <div style=" display:flex; position:absolute;width:500px; height:14.4px; top:541.8px;  left:13px;font-size:12px; font-weight:normal;justify-content:left; align-items:flex-end;   " > Bank Details</div>
     <div style=" display:flex; position:absolute;width:490.8px; height:14.4px; top:556.2px;  left:13px;font-size:11px; font-weight:normal;justify-content:center; align-items:flex-end;border-top:2px solid black;  " >  </div>
     <div style=" display:flex; position:absolute;width:51px; height:14.4px; top:570.6px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-start; " > BANK:</div>
-85  <div style=" display:flex; position:absolute;width:200px; height:14.4px; top:585px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-start; " > ACCOUNT/BENEFICIARY NAME:</div>
+  <div style=" display:flex; position:absolute;width:200px; height:14.4px; top:585px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-start; " > ACCOUNT/BENEFICIARY NAME:</div>
     <div style=" display:flex; position:absolute;width:279px; height:14.4px; top:585px; left:185px;font-size:11px; font-weight:bold;justify-content:flex-start; align-items:flex-start; " > ${tmpInvoiceHeaderData.accountname
       }</div>
     <div style=" display:flex; position:absolute;width:150px; height:14.4px; top:599.4px;  left:13px;font-size:11px; font-weight:normal;justify-content:left; align-items:flex-end; " > ACCOUNT NUMBER:</div>
